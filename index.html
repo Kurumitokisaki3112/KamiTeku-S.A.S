@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KamiTeku</title>
+    <link rel="stylesheet" href="css/estyleGlobal.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/inicio.css">
+    <link rel="stylesheet" href="css/acerca-servicios.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/plugin-country.css">
+    <link rel="stylesheet" href="css/estado-form.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/country-select-js@2.0.1/build/css/countrySelect.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container-opciones">
+            <div class="logoContainer">
+                <img src="source/image.png" alt="Logo" class="logo">
+            </div>
+
+            <nav class="navigator">
+                <span class="menu-icon">&#9776;</span>
+                <ul class="menu-list">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#acerca">Acerca de nosotros</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section id="inicio" class="video-container">
+            <video autoplay muted loop id="video-fondo">
+                <source src="source/WhatsApp Video 2025-06-22 at 10.10.11 AM.mp4" type="video/mp4">
+                Tu navegador no soporta video en HTML5.
+            </video>
+            <div class="contenido">
+                <h1>El poder supremo de lo digital</h1>
+                <p>Bienvenidos a KamiTeku, una comunidad donde la estética japonesa, el mundo gamer y la tecnología se
+                    fusionan para llevar tu experiencia digital al siguiente nivel.</p>
+            </div>
+        </section>
+
+        <section id="acerca" class="presentation">
+            <div class="texto">
+                <h1>¿Quiénes somos?</h1>
+                <p><strong>KamiTeku</strong> (カミテク) es una comunidad digital que combina cultura japonesa, tecnología y
+                    el mundo gamer para llevar tu identidad digital al siguiente nivel.</p>
+                <p>Conectamos talento, creamos experiencias únicas y potenciamos tu presencia online.</p>
+                <h2>Impulsa tu estilo en el universo digital</h2>
+            </div>
+            <img src="source/representacion-de-la-experiencia-del-usuario-y-diseno-de-la-interfaz.jpg"
+                alt="Equipo creativo trabajando" style="width: 100px;height: 400px;">
+        </section>
+
+        <section id="servicios" class="presentation">
+            <div class="servicios">
+                <div class="tarjeta-servicio">
+                    <img src="source/TargetaServicio1.jpeg" alt="Accesorios Gamer">
+                    <h3>formateo y respaldo de información</h3>
+                    <p>Aquí podrás formatear tu laptop y móvil  para prepararlo o reinstalar un sistema.</p>
+                </div>
+
+                <div class="tarjeta-servicio">
+                    <img src="source/TargetaServicio2.jpeg" alt="Soporte Técnico">
+                    <h3>Soporte Técnico</h3>
+                    <p>Soluciones rápidas y seguras para tus dispositivos y software.</p>
+                </div>
+
+                <div class="tarjeta-servicio">
+                    <img src="source/TargetaServicio3.jpeg" alt="Licencias Originales">
+                    <h3>Clases presenciales y virtuales</h3>
+                    <p>Recibe clases de programación, informatica y matematicas.</p>
+                </div>
+
+                <div class="tarjeta-servicio">
+                    <img src="source/TargetaServicio4 (1).jpeg" alt="Desarrollo Web">
+                    <h3>Desarrollo Web</h3>
+                    <p>Sitios modernos y personalizados que reflejan tu estilo e impulsan tu marca.</p>
+                </div>
+
+                <div class="tarjeta-servicio">
+                    <img src="source/TargetaServicio6.jpeg" alt="PNG-Tubers y Avatares 3D">
+                    <h3>PNG-Tubers y Avatares 3D</h3>
+                    <p>Diseños visuales únicos para streamers y creadores de contenido.</p>
+                </div>
+
+                <div class="tarjeta-servicio">
+                    <img src="source/TargetaServicio5.jpeg" alt="Apps Premium">
+                    <h3>instalación y configuración de sistemas operativos</h3>
+                    <p>adquiere sistemas operativos tanto windows como linux + activador de licencia.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="fondoContacto">
+            <section id="contacto" class="contacto">
+                <h2>Te contactamos</h2>
+                <form class="formulario" id="formulario-contacto">
+                    <div class="fila">
+                        <input type="text" id="pais" name="pais" />
+                        <input type="tel" id="telefono" name="telefono" placeholder="Número de teléfono *" required>
+                    </div>
+
+                    <div class="fila">
+                        <span class="error-msg" id="error-telefono"></span>
+                    </div>
+
+                    <div class="fila">
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre completo *" required>
+                        <input type="email" id="correo" name="correo" placeholder="Correo electrónico *" required>
+                    </div>
+
+                    <div class="fila">
+                        <span class="error-msg" id="error-nombre"></span>
+                        <span class="error-msg" id="error-correo"></span>
+                    </div>
+
+                    <div class="fila">
+                        <textarea id="mensaje" name="mensaje" placeholder="Adjunta tu mensaje *" required></textarea>
+                    </div>
+
+                    <div class="fila">
+                        <span class="error-msg" id="error-mensaje"></span>
+                    </div>
+
+                    <div class="fila botones">
+                        <button type="submit" class="btn-enviar">Enviar</button>
+                        <button type="reset" class="btn-limpiar">Limpiar</button>
+                    </div>
+
+                    <div id="spinner" class="oculto">Enviando...</div>
+                    <div id="mensaje-exito" class="oculto">¡Mensaje enviado!</div>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 KamiTeku - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/country-select-js@2.0.1/build/js/countrySelect.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("XpnFNAYwdCp7ltXIm");
+        })();
+    </script>
+
+    <script src="js/jsIndex.js"></script>
+</body>
+
+</html>
